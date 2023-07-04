@@ -24,6 +24,8 @@ loader.load(
     // set the up vector to be the y axis
     eye.up.set(0, 1, 0);
 
+    eye.material = new THREE.MeshPhysicalMaterial({ color: 0xffffff });
+
     gltf.scene.scale.set(0.01, 0.01, 0.01);
     scene.add(gltf.scene);
   }
